@@ -41,7 +41,7 @@ export default function Dashboard() {
       </div>
 
       {/* Biểu đồ trạng thái */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 shadow-2xl">
         <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg">
           <h3 className="text-xl font-bold text-gray-900 mb-4">Biểu đồ thống kê trạng thái</h3>
           <PieChart width={350} height={300}>
