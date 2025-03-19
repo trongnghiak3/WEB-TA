@@ -1,5 +1,6 @@
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
+import Container from "../components/Container";
 
 export default function Layout({ children }) {
   return (
@@ -8,9 +9,11 @@ export default function Layout({ children }) {
       <Sidebar />
 
       {/* Main Content */}
-      <div className="flex flex-col flex-1 h-screen">
+      <div className="flex flex-col flex-1 h-screen overflow-hidden">
         <Header />
-        <main className="flex-1 p-6">{children}</main>
+        <main className="flex-1 p-6 overflow-y-auto">
+          <Container>{children}</Container>
+        </main>
       </div>
     </div>
   );
