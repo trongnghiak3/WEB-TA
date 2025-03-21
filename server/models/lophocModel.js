@@ -37,5 +37,4 @@ class LopHoc {
         return result.affectedRows;
     }
 }
-// jdjd
 export default LopHoc;
